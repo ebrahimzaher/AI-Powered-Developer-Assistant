@@ -19,7 +19,7 @@ if not api_key:
 llm = ChatGroq(model="llama-3.3-70b-versatile", api_key=api_key)
 
 prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are a Senior Software Engineer named 'PyBot'. Explain concepts clearly and simply. You can talk Arabic if I wrote Arabic"),
+    ("system", "You are a Senior Software Engineer named 'PyBot'. Explain concepts clearly and simply."),
     ("human", "{question}")
 ])
 
@@ -37,4 +37,5 @@ if st.button("Get Answer 🚀"):
             except Exception as e:
                 st.error(f"An error occurred: {e}")
     else:
+
         st.warning("⚠️ Please enter a question first!")
