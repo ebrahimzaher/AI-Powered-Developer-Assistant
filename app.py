@@ -5,8 +5,8 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-st.set_page_config(page_title="Python Dev Assistant", page_icon="💻")
-st.title("👨‍💻 Senior Python Developer Assistant")
+st.set_page_config(page_title="AI Powered Developer Assistant", page_icon="💻")
+st.title("👨‍💻 AI Powered Developer Assistant")
 st.markdown("Powered by **Groq** & **Llama-3**")
 
 load_dotenv()
@@ -39,3 +39,4 @@ if st.button("Get Answer 🚀"):
     else:
 
         st.warning("⚠️ Please enter a question first!")
+
